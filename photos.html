@@ -38,7 +38,8 @@
   <header class="jumbotron">
     <div class="container">
       <div class="row row-header">
-        <div class="col-12 col-sm-6">
+        <div class="d-block d-sm-none col-12"><h2>Gamechangers Memories</h2><p>Let us take a road down the past 2 years and relive our memories together💕</p></div>
+        <div class="d-none d-sm-block col-sm-6">
           <h1>Gamechangers Memories</h1>
           <p>Let us take a road down the past 2 years and relive our memories together💕</p>
         </div>
@@ -136,7 +137,7 @@
 
     <div class="row row-content">
       <div class="col">
-        <h2>Iconic Gamechanger Moments</h2>
+        <h2>Iconic Gamechangers Moments</h2>
         <div id="groupcarousel" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#groupcarousel" data-slide-to="0" class="active"></li>
@@ -303,19 +304,19 @@
         <iframe class="embed-responsive-item" src="img/vid0.mp4"></iframe>
       </div> -->
       <div class="col-12 my-auto"><video controls height=400px>
-  <source src="img/vid0.mp4" >
-</video>
-</div>
-<div class="col-12">
-      <video controls>
-  <source src="img/vid1.mp4">
-</video>
-<div class="col-12">
-      <video controls>
-  <source src="img/vid2.mp4">
-</video>
-</div>
-</div>
+          <source src="img/vid0.mp4">
+        </video>
+      </div>
+      <div class="col-12">
+        <video controls>
+          <source src="img/vid1.mp4">
+        </video>
+        <div class="col-12">
+          <video controls>
+            <source src="img/vid2.mp4">
+          </video>
+        </div>
+      </div>
       <!-- <div class="embed-responsive embed-responsive-21by9">
         <iframe class="embed-responsive-item" src="img/vid1.mp4"></iframe>
       </div> -->
@@ -326,9 +327,14 @@
   <footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-4"><img src="img/logo.jfif" height=350px></img></div>
-        <div class="col-6 offset-sm-2 footer-name">
-          <div class="offset-sm-3">The</div> Gamechangers<sup>©</sup>
+        <div class="d-block d-sm-none"><img src="img/logo.jfif" width=100%></img></div>
+        <div class="d-none d-sm-block col-sm-4"><img src="img/logo.jfif" height=350px></img></div>
+        <div class="d-block d-sm-none">
+          <h2>The Gamechangers<sup>©</sup></h2>
+        </div>
+        <div class="col-12 col-sm-6 offset-sm-2 footer-name d-none d-sm-block">
+          <div class="col-12 offset-sm-3">The</div>
+          <div class="col-12"> Gamechangers<sup>©</sup></div>
         </div>
       </div>
     </div>
@@ -340,7 +346,7 @@
   <script>
     $(document).ready(function() {
       $('#mycarousel').carousel({
-        interval: 2000
+        interval: 3000
       });
       $('#carouselButton').click(function() {
         if ($('#carouselButton').children('span').hasClass('fa-pause')) {
@@ -355,7 +361,7 @@
 
       });
       $('#misccarousel').carousel({
-        interval: 2000
+        interval: 3000
       });
       $('#misccarouselButton').click(function() {
         if ($('#misccarouselButton').children('span').hasClass('fa-pause')) {
@@ -370,7 +376,7 @@
 
       });
       $('#groupcarousel').carousel({
-        interval: 2000
+        interval: 3000
       });
       $('#groupcarouselButton').click(function() {
         if ($('#groupcarouselButton').children('span').hasClass('fa-pause')) {
