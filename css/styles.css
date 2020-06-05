@@ -76,6 +76,12 @@ body {
   bottom: 0px;
   z-index:1;
 }
+#misccarouselButton {
+  right: 20px;
+  position: absolute;
+  bottom: 0px;
+  z-index:1;
+}
 
  span {
     text-transform: uppercase;
